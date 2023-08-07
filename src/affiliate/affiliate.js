@@ -90,7 +90,7 @@ function Affiliate() {
                 />
               </div>
               <div className="item" style={{ marginTop: "10px" }}>
-                Acccount <KeyboardArrowDownIcon />
+                Account <KeyboardArrowDownIcon />
               </div>
             </div>
           </NavLink>
@@ -115,7 +115,7 @@ function Affiliate() {
           </NavLink>
         </div>
         <div className="affiliate">
-          <NavLink to="#">
+          <NavLink to="/affiliateindians">
             <div className="affiliate-inner">
               <div>
                 <CurrencyRupeeOutlinedIcon
@@ -775,7 +775,6 @@ function Affiliate() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
                   </p>
                   <p
                     style={{
@@ -996,7 +995,6 @@ function Affiliate() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
                   </p>
                   <p
                     style={{

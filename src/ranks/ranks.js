@@ -116,7 +116,7 @@ function Rank() {
           </NavLink>
         </div>
         <div className="affiliate">
-          <NavLink to="#">
+          <NavLink to="/affiliateindians">
             <div className="affiliate-inner">
               <div>
                 <CurrencyRupeeOutlinedIcon
@@ -776,7 +776,7 @@ function Rank() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{
@@ -883,7 +883,7 @@ function Rank() {
                         </center>
                       </div>
                     </div>
-                    >
+                    
                     <div className="rank-right-block2-container3-innerright"></div>
                   </div>
                 </div>
@@ -930,7 +930,7 @@ function Rank() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{
@@ -1036,7 +1036,7 @@ function Rank() {
                         </center>
                       </div>
                     </div>
-                    >
+                    
                     <div className="rank-right-block2-container3-innerright"></div>
                   </div>
                 </div>

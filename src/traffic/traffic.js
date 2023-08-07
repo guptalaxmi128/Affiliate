@@ -115,7 +115,7 @@ function Traffic() {
           </NavLink>
         </div>
         <div className="affiliate">
-          <NavLink to="#">
+          <NavLink to="/affiliateindians">
             <div className="affiliate-inner">
               <div>
                 <CurrencyRupeeOutlinedIcon
@@ -774,7 +774,7 @@ function Traffic() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{
@@ -847,7 +847,7 @@ function Traffic() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{

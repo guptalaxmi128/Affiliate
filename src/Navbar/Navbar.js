@@ -64,7 +64,7 @@ const Navbar = () => {
                </NavLink>
             </div>
             <div className="affiliate">
-              <NavLink  to="#"> 
+              <NavLink  to="/affiliateindians"> 
               <div className="affiliate-inner">
                <div><CurrencyRupeeOutlinedIcon style={{fontSize:"30px",marginTop:"5px"}} /></div>
                <div style={{marginTop:"10px"}}> Affiliates</div> </div>

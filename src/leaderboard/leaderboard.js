@@ -115,7 +115,7 @@ function LeaderBoard() {
           </NavLink>
         </div>
         <div className="affiliate">
-          <NavLink to="#">
+          <NavLink to="/affiliateindians">
             <div className="affiliate-inner">
               <div>
                 <CurrencyRupeeOutlinedIcon
@@ -775,7 +775,7 @@ function LeaderBoard() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{
@@ -926,7 +926,7 @@ function LeaderBoard() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{

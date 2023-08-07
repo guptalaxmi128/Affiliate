@@ -115,7 +115,7 @@ function Commision() {
           </NavLink>
         </div>
         <div className="affiliate">
-          <NavLink to="#">
+          <NavLink to="/affiliateindians">
             <div className="affiliate-inner">
               <div>
                 <CurrencyRupeeOutlinedIcon
@@ -775,7 +775,7 @@ function Commision() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{
@@ -923,7 +923,7 @@ function Commision() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{

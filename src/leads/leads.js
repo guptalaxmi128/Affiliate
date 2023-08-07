@@ -118,7 +118,7 @@ function Leads() {
           </NavLink>
         </div>
         <div className="affiliate">
-          <NavLink to="#">
+          <NavLink to="/affiliateindians">
             <div className="affiliate-inner">
               <div>
                 <CurrencyRupeeOutlinedIcon
@@ -745,7 +745,7 @@ function Leads() {
             </div>
           </div>
         )}
-        }{/* sidebar */}
+        {/* sidebar */}
         {matches ? (
           <div>
             <div className={ham ? "home-right" : "home-right1"}>
@@ -777,7 +777,6 @@ function Leads() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
                   </p>
                   <p
                     style={{
@@ -860,7 +859,6 @@ function Leads() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
                   </p>
                   <p
                     style={{

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import { NavLink } from "react-router-dom";
 import WebIcon from "@mui/icons-material/Web";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
@@ -16,12 +16,19 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import CurrencyRupeeOutlinedIcon from "@mui/icons-material/CurrencyRupeeOutlined";
 import AttachFileOutlinedIcon from "@mui/icons-material/AttachFileOutlined";
 import ContactMailOutlinedIcon from "@mui/icons-material/ContactMailOutlined";
+import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import "./Home.css";
 function Home() {
   const [ham, setham] = useState(false);
   const [matches, setMatches] = useState(
     window.matchMedia("(max-width: 1030px)").matches
   );
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSupport, setIsSupport] = useState(false);
+  const dropdownRef = useRef(null);
+  const supportRef = useRef(null);
 
   useEffect(() => {
     window
@@ -30,6 +37,39 @@ function Home() {
   }, []);
   const cross = () => {
     setham(!ham);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+    if (supportRef.current && !supportRef.current.contains(event.target)) {
+      setIsSupport(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const toggleSupport = () => {
+    setIsSupport(!isSupport);
+  };
+
+  const closeSupport = () => {
+    setIsSupport(false);
+  };
+
+  const closeDropdown = () => {
+    setIsOpen(false);
   };
   return (
     <>
@@ -82,23 +122,31 @@ function Home() {
           </NavLink>
         </div>
         <div className="account">
-          <NavLink to="#">
-            <div className="account-inner">
+          <NavLink to="/affiliateindians">
+            <div className="account-inner"  onClick={toggleDropdown} ref={dropdownRef}>
               <div>
                 <PersonOutlineOutlinedIcon
                   style={{ fontSize: "30px", marginTop: "5px" }}
                 />
               </div>
               <div className="item" style={{ marginTop: "10px" }}>
-                Acccount <KeyboardArrowDownIcon />
+                Account <KeyboardArrowDownIcon />
               </div>
             </div>
           </NavLink>
+          {isOpen && (
+        <div className="dropdown-menu" onClick={closeDropdown}> 
+          <NavLink to="/profile" className="dropdown-item"><PersonOutlineOutlinedIcon style={{fontSize:'20px'}} />&nbsp;Profile</NavLink>
+          <NavLink to="/settings" className="dropdown-item"><SettingsOutlinedIcon style={{fontSize:'20px'}} />&nbsp;Settings</NavLink>
+          <hr className="dropdown-line" />
+          <NavLink to="/logout" className="dropdown-item"><LogoutOutlinedIcon style={{fontSize:'18px'}} /> &nbsp;Logout</NavLink>
+        </div>
+      )}
         </div>
 
         <div className="support">
           <NavLink to="#">
-            <div className="support-inner">
+            <div className="support-inner" onClick={toggleSupport} ref={supportRef}>
               <div>
                 <AttachFileOutlinedIcon
                   style={{
@@ -113,6 +161,12 @@ function Home() {
               </div>
             </div>
           </NavLink>
+          {isSupport && (
+        <div className="dropdown-menu" onClick={closeSupport}> 
+          <NavLink to="/FAQs" className="dropdown-item"><SettingsOutlinedIcon style={{fontSize:'20px'}} />&nbsp;FAQs</NavLink>
+          <NavLink to="/facebook-group" className="dropdown-item"><SettingsOutlinedIcon style={{fontSize:'20px'}} />&nbsp;Facebook Group</NavLink>
+        </div>
+      )}
         </div>
         <div className="affiliate">
           <NavLink to="#">
@@ -775,7 +829,7 @@ function Home() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{
@@ -893,7 +947,7 @@ function Home() {
                       paddingLeft: "10px",
                     }}
                   >
-                    >
+                    
                   </p>
                   <p
                     style={{

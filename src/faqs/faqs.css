@@ -1,0 +1,546 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Rajdhani, sans-serif;
+  }
+  .home {
+    position: absolute;
+    height: 90h;
+    top: 10vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .home-left {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 240px;
+    color: #fff;
+  
+    background-image: url(https://affiliateindians.com/ai/members/assets/banner_bg/background.jpg);
+  }
+  .home-left2 {
+    display: none;
+  }
+  
+  .stream,
+  .traffic,
+  .commisions,
+  .leader,
+  .rank,
+  .reports,
+  .members,
+  .leads,
+  .links,
+  .wallet,
+  .start {
+    height: 48px;
+  }
+  .stream a,
+  .traffic a,
+  .commisions a,
+  .leader a,
+  .rank a,
+  .reports a,
+  .members a,
+  .leads a,
+  .links a,
+  .wallet a,
+  .start a {
+    color: #fff;
+    font-size: 16px;
+    padding-left: 10%;
+  }
+  .stream:active,
+  .traffic:active,
+  .commisions:active,
+  .leader:active,
+  .rank:active,
+  .reports:active,
+  .members:active,
+  .leads:active,
+  .links:active,
+  .wallet:active,
+  .start:active,
+  .stream:active,
+  .traffic:active,
+  .commisions:active,
+  .leader:active,
+  .rank:active,
+  .reports:active,
+  .members:active,
+  .leads:active,
+  .links:active,
+  .wallet:active,
+  .start:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #dcb52c;
+    border-right: 2px solid #fff;
+  }
+  .stream a:hover,
+  .traffic a:hover,
+  .commisions a:hover,
+  .leader a:hover,
+  .rank a:hover,
+  .reports a:hover,
+  .members a:hover,
+  .leads a:hover,
+  .links a:hover,
+  .wallet a:hover,
+  .start a:hover,
+  .stream a:hover,
+  .traffic a:hover,
+  .commisions a:hover,
+  .leader a:hover,
+  .rank a:hover,
+  .reports a:hover,
+  .members a:hover,
+  .leads a:hover,
+  .links a:hover,
+  .wallet a:hover,
+  .start a:hover {
+    color: #dcb52c;
+  }
+  
+  .start {
+    margin-top: 15%;
+  }
+  .home-left1 {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 70px !important;
+    color: #fff;
+  
+    background-image: url(https://affiliateindians.com/ai/members/assets/banner_bg/background.jpg);
+  }
+  
+  .stream1,
+  .traffic1,
+  .commisions1,
+  .leader1,
+  .rank1,
+  .reports1,
+  .members1,
+  .leads1,
+  .links1,
+  .ewallet1,
+  .start1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 11px;
+  }
+  .start1:hover .start1-icon,
+  .ewallet1:hover .ewallet1-icon,
+  .links1:hover .links1-icon,
+  .leads1:hover .leads1-icon,
+  .members1:hover .members1-icon,
+  .reports1:hover .reports1-icon,
+  .rank1:hover .rank1-icon,
+  .leader1:hover .leader1-icon,
+  .commisions1:hover .commisions1-icon,
+  .stream1:hover .stream1-icon,
+  .traffic1:hover .traffic1-icon {
+    color: #dcb52c;
+  }
+  .start1-content,
+  .links1-content,
+  .leader1-content,
+  .rank1-content,
+  .reports1-content,
+  .traffic1-content,
+  .stream1-content,
+  .commisions1-content,
+  .leads1-content,
+  .members1-content,
+  .ewallet1-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 16px;
+    padding: 15px;
+    width: 210px;
+  }
+  .start1-content1,
+  .leads1-content1,
+  .links1-content1,
+  .ewallet1-content1,
+  .members1-content1,
+  .traffic1-content1,
+  .stream1-content1,
+  .reports1-content1,
+  .rank1-content1,
+  .commisions1-content1,
+  .leader1-content1 {
+    color: #fff;
+    width: 230px;
+  }
+  .start1-icon,
+  .ewallet1-icon,
+  .links1-icon,
+  .leads1-icon,
+  .members1-icon,
+  .reports1-icon,
+  .rank1-icon,
+  .leader1-icon,
+  .commisions1-icon,
+  .stream1-icon,
+  .traffic1-icon {
+    color: #fff;
+  }
+  .stream1:hover .stream1-content,
+  .traffic1:hover .traffic1-content,
+  .commisions1:hover .commisions1-content,
+  .leader1:hover .leader1-content,
+  .rank1:hover .rank1-content,
+  .reports1:hover .reports1-content,
+  .members1:hover .members1-content,
+  .leads1:hover .leads1-content,
+  .links1:hover .links1-content,
+  .ewallet1:hover .ewallet1-content,
+  .start1:hover .start1-content {
+    display: block;
+    left: 70px;
+    top: 0px;
+    background-color: rgb(60, 69, 86);
+  }
+  .stream1:hover .stream1-content1,
+  .traffic1:hover .traffic1-content1,
+  .commisions1:hover .commisions1-content1,
+  .leader1:hover .leader1-content1,
+  .rank1:hover .rank1-content1,
+  .reports1:hover .reports1-content1,
+  .members1:hover .members1-content1,
+  .leads1:hover .leads1-content1,
+  .links1:hover .links1-content1,
+  .ewallet1:hover .ewallet1-content1,
+  .start1:hover .start1-content1 {
+    color: #dcb52c;
+  }
+  
+  .stream1:hover,
+  .traffic1:hover,
+  .commisions1:hover,
+  .leader1:hover,
+  .rank1:hover,
+  .reports1:hover,
+  .members1:hover,
+  .leads1:hover,
+  .links1:hover,
+  .ewallet1:hover,
+  .start1:hover {
+    background-color: rgb(60, 69, 86);
+  }
+  
+  .start1 {
+    margin-top: 55%;
+  }
+  .header-heading {
+    color: #000;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .home-right {
+    position: absolute;
+    left: 240px;
+    display: flex;
+    flex-direction: column;
+  
+    width: calc(100% - 240px);
+    height: 100%;
+  }
+  .home-right1 {
+    position: absolute;
+    left: 70px;
+    display: flex;
+    flex-direction: column;
+  
+    width: calc(100% - 70px);
+    height: 100%;
+  }
+  .right-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    justify-content: space-between;
+    padding: 15px 0px;
+    background-color: #fff;
+  }
+  
+  .sidewords {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .right-block1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 25px;
+  }
+  .right-block1-part1-container {
+    background-color: #fff;
+    border: 1px solid black;
+    height: 309px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .right-block-container {
+    background-color: #f5f4f7;
+  }
+  .sidebar-container2 {
+    display: none;
+  }
+  .right-block1-part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    border-radius: 5px;
+    padding: 6px;
+    background-image: url(https://affiliateindians.com/ai/members/assets/banner_bg/background.jpg);
+  }
+  .right-block1-part2 {
+    background-image: url(https://affiliateindians.com/ai/affiliate/assets/ranks/affiliate.jpg);
+    background-size: 100% 100% !important;
+    border: 1px solid black;
+    height: 309px;
+    width: 31.5%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .copyright {
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: #f5f4f7;
+    font-size: 16px;
+  }
+  .ewallet-right-block2-container {
+    background-color: #fff;
+    height: 190px;
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0px 25px;
+    margin-bottom: 25px;
+  }
+  .ewallet-right-block2 {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+  }
+  .ewallet-right-block2-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 28px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .ewallet-right-block2-body {
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f4f7;
+    height: 80px;
+  }
+  .ewallet-right-block2-body1 {
+    width: 35%;
+    border: 1px solid #bdbcbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-bottom-right-radius: 5px;
+  }
+  .ewallet-right-block2-body2 {
+    width: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bdbcbf;
+    font-size: 18px;
+  }
+  .ewallet-right-block2-body3 {
+    border: 1px solid #bdbcbf;
+    width: 44%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    align-items: center;
+    border-bottom-right-radius: 5px;
+  }
+  .ewallet-button {
+    width: 120px;
+    border: none;
+    margin-left: 20px;
+    background-color: #198ae3;
+    color: #000;
+    border-radius: 5px;
+    height: 37px;
+    font-size: 14px;
+  }
+  .ewallet-right-block3-container {
+    background-color: #fff;
+    height: 210px;
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0px 25px;
+    margin-bottom: 25px;
+  }
+  .ewallet-right-block3 {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+  }
+  .ewallet-right-block3-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 28px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .ewallet-right-block3-body {
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f4f7;
+    height: 50px;
+  }
+  .ewallet-right-block3-body1 {
+    width: 19%;
+    border: 1px solid #bdbcbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-bottom-right-radius: 5px;
+  }
+  .ewallet-right-block3-body2 {
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bdbcbf;
+    font-size: 18px;
+  }
+  .ewallet-right-block3-body3 {
+    border: 1px solid #bdbcbf;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+    border-bottom-right-radius: 5px;
+  }
+  .ewallet-right-block3-body4 {
+    border: 1px solid #bdbcbf;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+    border-bottom-right-radius: 5px;
+  }
+  .ewallet-right-block3-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid #bdbcbf;
+    width: 100%;
+    font-size: 18px;
+    height: 50px;
+  }
+  .ewallet-right-block3-bottom:hover {
+    background-color: #f5f4f7;
+  }
+  @media (max-width: 1200px) {
+  }
+  @media (max-width: 1030px) {
+    .sidebar-container2 {
+      display: flex;
+    }
+    .sidebar-container1 {
+      display: none;
+    }
+    .right-block1 {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 25px;
+    }
+    .right-block1-part2 {
+      width: 100%;
+    }
+    .right-block1-part1-container {
+      width: 100%;
+    }
+  }
+  @media (max-width: 880px) {
+    .ewallet-right-block2-container {
+      height: 190px;
+    }
+  }
+  @media (max-width: 600px) {
+    .home-left {
+      display: none;
+    }
+    .home-left1 {
+      display: none;
+    }
+    .home-right {
+      width: 100%;
+      left: 0;
+    }
+    .home-right1 {
+      width: 100%;
+      left: 0;
+    }
+    .home-left2 {
+      z-index: 1515165;
+      top: 10vh;
+      left: 0;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+      width: 240px;
+      color: #fff;
+  
+      background-image: url(https://affiliateindians.com/ai/members/assets/banner_bg/background.jpg);
+    }
+    .sidewords {
+      display: none;
+    }
+  }
+  
